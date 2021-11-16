@@ -1,10 +1,82 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
+
+
+// Function sum
+// Takes two parameters, num1 and num2
+// returns sum of two numbers
+function sum(num1, num2) {
+  // If first number is not defined, then use it's value as 0
+  if(num1 == undefined){
+    num1=0
+  }
+  // If second number is not defined, then use it's value as 0
+  if(num2 == undefined){
+    num2=0
+  }
+  // Return the sum of both the numbers
+  return num1+num2;
+}
+
+// Function difference
+// Takes two parameters, num1 and num2
+// returns difference of two numbers
+function difference(num1, num2) {
+  // If first number is not defined, then use it's value as 0
+  if(num1 == undefined){
+    num1 = 0
+  }
+  // If second number is not defined, then use it's value as 0
+  if(num2 == undefined){
+    num2 = 0
+  }
+  // Return the sum of both the numbers
+  return num1 - num2;
+}
+
+// Function product
+// Takes two parameters, num1 and num2
+// returns product of two numbers
+function product(num1, num2) {
+  // If first number is not defined, then use it's value as 0
+  if(num1 == undefined){
+    num1 = 0
+  }
+  // If second number is not defined, then use it's value as 1 since we already have 1 value defined.
+  if(num2 == undefined){
+    num2 = 1
+  }
+  // Return the sum of both the numbers
+  return num1 * num2;
+}
+
+// Function quotient
+// Takes two parameters, num1 and num2
+// returns quotient of two numbers
+function quotient(num1, num2) {
+  // If first number is not defined, then use it's value as 0
+  if(num1 == undefined){
+    num1 = 0
+  }
+  // If second number is not defined, then use it's value as 1 since we already have 1 value defined.
+  if(num2 == undefined){
+    num2 = 1
+  }
+  // If second number is 0, it should return error as mentioned in Test Case 2
+  if(num2 == 0){
+    return "ERROR";
+  }
+  // Return the sum of both the numbers
+  return num1 / num2;
+}
+
+// Function calc
+// Takes 3 params : calculation, first number, second number
+// returns the result after performing arithmetic operation.
 function calc() {
 
 }
-
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
 // ==================================================
