@@ -73,9 +73,17 @@ function quotient(num1, num2) {
 
 // Function calc
 // Takes 3 params : calculation, first number, second number
-// returns the result after performing arithmetic operation.
+// returns the result after performing arithmetic operation
 function calc() {
-
+  // Using SWITCH cases to determine which calculation
+  // user wants to perform & call the function accordingly.
+  switch (calculation) {
+    case 'add': return sum(firstNumber, secondNumber);
+    case 'subtract': return difference(firstNumber, secondNumber);
+    case 'multiply': return product(firstNumber, secondNumber);
+    case 'divide': return quotient(firstNumber, secondNumber);
+    default: return "Operation not supported."
+  }
 }
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
