@@ -1,8 +1,21 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function quotient() {
-
+function quotient(num1, num2) {
+  // If first number is not defined, then use it's value as 0
+  if(num1 == undefined){
+    num1 = 0
+  }
+  // If second number is not defined, then use it's value as 1 since we already have 1 value defined.
+  if(num2 == undefined){
+    num2 = 1
+  }
+  // If second number is 0, it should return error as mentioned in Test Case 2
+  if(num2 == 0){
+    return "ERROR";
+  }
+  // Return the sum of both the numbers
+  return num1 * num2;
 }
 
 // ==================================================
